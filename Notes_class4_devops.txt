@@ -1,0 +1,98 @@
+maven steps
+
+1) download maven from below mentioned website:
+
+2) unzip file
+
+3) Place unzip file in any folder (for eg: C:/
+
+4) Set environment variable
+
+
+5) updating pom.xml file with dependencies
+
+
+
+Important Plugins in Jenkins
+
+- Maven Integration plugin
+- Email 
+- Git
+
+
+
+
+-----Remote repository-----> master------->github
+-----Local repository----local machine using eclipse
+----- local branch--------> branch_KB------>github
+
+
+
+
+
+https://github.com/KartikEdureka/devops_v7.git
+
+
+
+
+
+Pipeline Phase
+
+1- Add pipeline plugin from plufin manager
+2- Create Pipeline project
+3- Update git url in pipeline declarative script
+
+code:
+
+pipeline {  
+    agent any  
+    stages {  
+            stage ('Build') {  
+                 steps {  
+                        echo 'Running build phase...'  
+                }   
+            }  
+            stage ('SmokeTest') {  
+                 steps {  
+                        echo 'Running test phase...'  
+                       
+                }  
+            }  
+            stage ('QA') {  
+                 steps {  
+                        echo 'Running QA phase...'  
+                         https://github.com/KartikEdureka/devops_v7.git
+                }    
+            }  
+            stage ('Deploy') {  
+                 steps {  
+                        echo 'Running Deploy phase...'  
+                }  
+            }  
+            stage ('Monitor') {  
+                 steps {  
+                        echo 'Running Monitor phase...'  
+                }   
+            }  
+    }  
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
